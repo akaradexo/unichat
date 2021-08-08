@@ -11,7 +11,7 @@ const Login = () =>{
         <div id="login-page">
             <div id="login-card">
                 <img className="mini-logo" src={logo} alt="logo"/>
-                <h2>Welcome to ZyZy - Chat App</h2>
+                <h2>Welcome to ZyZy</h2>
                 <div 
                 className="login-button google"
                 onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
@@ -23,7 +23,7 @@ const Login = () =>{
                 onClick={() => auth.signInWithRedirect (new firebase.auth.FacebookAuthProvider())}>
                 <FacebookFilled /> Sign In with Facebook
                 </div>
-                <p>Made by Ashutosh</p>
+                <p>- Made by Ashutosh</p>
             </div>
         </div>
 
