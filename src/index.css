@@ -1,9 +1,7 @@
 /* Global */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Chats Page */
@@ -19,7 +17,9 @@
 .nav-bar {
   width: 100%;
   height: 66px;
-  background-color: #002766;
+  background-color: #0499f2;
+background-image: linear-gradient(315deg, #0499f2 0%, #26f596 74%);
+
 }
 
 .logo-tab {
@@ -35,8 +35,17 @@
   position: absolute;
   top: 22px;
   right: 22px;
+  font-size: 20px;
   color: white;
   cursor: pointer;
+}
+.logout-tab:hover{
+  font-weight: 700;
+}
+.mini-logo{
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
 }
 
 ::-webkit-scrollbar {
@@ -47,7 +56,9 @@
 /* Login Page */
 
 #login-page {
-  background-image: linear-gradient(#40a9ff, #096dd9);
+ 
+  background-image:url(./image/background.gif);
+  background-repeat: repeat;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -63,8 +74,10 @@
   padding-bottom: 66px;
   width: 420px;
   text-align: center;
-  background-color: white;
+  background-color: #d9d9d9;
+background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
   border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .login-button {
@@ -73,6 +86,10 @@
   padding: 12px;
   border-radius: 8px;
   display: inline-block;
+}
+.login-button:hover{
+  border-radius: 15px;
+  font-weight: 700;
 }
 
 .facebook {

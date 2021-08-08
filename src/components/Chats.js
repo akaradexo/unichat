@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import { useHistory } from'react-router-dom';
 import { ChatEngine } from 'react-chat-engine';
 import { auth } from "../firebase";
-
+import logo from '../image/logo.png';
 import{useAuth} from '../contexts/AuthContext';
 import axios from "axios";
 
@@ -62,7 +62,7 @@ if(!user || loading) return 'Loading...';
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">
-                    ZyZy
+                    <img className="mini-logo" src={logo} alt="logo"/>ZyZy
                 </div>
                 <div onClick={handleLogout} className="logout-tab">
                     Logout
