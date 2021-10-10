@@ -13,7 +13,7 @@ const [loading, setLoading] = useState(true);
 
 
 
-const handleLogout =async()=>{
+const handleLogout = async()=>{
     await auth.signOut();
     history.push('/');
 }
