@@ -12,10 +12,10 @@ export const AuthProvider =({children})=>{
     const history =useHistory();
 
     useEffect(()=>{
+        //grabbing the user
         auth.onAuthStateChanged((user)=>{
             setUser(user);
             setLoading(false);
-
             if(user) history.push('/chats');
         })
     },[user,history]);
